@@ -26,6 +26,18 @@ function playRound () {
     return "You lose!";
     } else if (playerSelection === "rock" & computerPlay() === "Scissors") {
     return "You win!";
+    } else if (playerSelection === "paper" & computerPlay() === "Paper") {
+    return "It's a tie!";
+    } else if (playerSelection === "Paper" & computerPlay() === "Scissors") {
+    return "You lose!";
+    } else if (playerSelection === "Paper" & computerPlay() === "Rock") {
+    return "You win!";
+    } else if (playerSelection === "scissors" & computerPlay() === "Scissors") {
+    return "It's a tie!";
+    } else if (playerSelection === "scissors" & computerPlay() === "Rock") {
+    return "You lose!";
+    } else if (playerSelection === "scissors" & computerPlay() === "Paper") {
+    return "You win!";
     }
 }
 console.log(playRound());
